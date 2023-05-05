@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Comic AudioBook</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet"  href="{{ url_for('static', filename='main.css')}}" />
+    <noscript><link rel="stylesheet"  href="{{ url_for('static', filename='noscript.css')}}"/></noscript>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+
+					<header id="header">
+
+						<div class="content">
+							<div class="inner">
+								<h1>Upload your Comic Book</h1>
+								<p>You can upload a comic page or a comic book<br />
+								for free and see the magic!</p>
+							</div>
+
+
+							<h4>Upload your comic here:</h4>
+							
+								<ul class="icons">
+									
+
+									<form method=post enctype=multipart/form-data class="secondary" > 
+										<div class="button icon solid fa-download">
+										<input type=file name=image class="secondary">
+									</div>
+									
+									<li><input type="submit" value="Upload" class="secondary" /></li>
+									<li><input type="submit" value="Predict" class="secondary" /></li>
+									</form>
+
+									
+
+									
+										
+								</ul>
+								<form action="/show_image" target="_blank">									
+									<li><a href="display.html"><input style="margin-left : 49px;" type="submit" value="Click to see Audiobook" class="primary" /></a></li>
+									</form>
+
+						</div>
+						
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+
+			<script  src="{{ url_for('static', filename='jquery.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='browser.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='breakpoints.min.js')}}" ></script>
+			<script src="{{ url_for('static', filename='util.js')}}" ></script>
+			<script src="{{ url_for('static', filename='main.js')}}" ></script>
+
+	</body>
+</html>
