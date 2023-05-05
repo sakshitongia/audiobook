@@ -57,7 +57,7 @@ def upload_predict():
             #pred = panels(image_location)
             session['pred_val'] = predict(image_location) #give file path
             #img_file_path = session.get('pred', None)
-            return render_template('index.html')
+            return render_template('view.html')
             #return render_template("index.html", Prediction = pred)
 
 

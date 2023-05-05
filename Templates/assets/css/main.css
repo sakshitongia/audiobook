@@ -23,7 +23,10 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+
+	
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -659,8 +662,8 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
+			background-image: url(static/overlay.png); 
+			background-color: rgba(229, 206, 152, 0.5);
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -1131,6 +1134,7 @@ input, select, textarea {
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
+
 	}
 
 		#bg:before, #bg:after {
@@ -1152,7 +1156,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(255, 178, 77, 0.5), rgba(255, 178, 77, 0.5)), url("static/overlay.png");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1190,12 +1194,13 @@ input, select, textarea {
 		}
 
 		body.is-preload #bg:before {
-			background-color: #000000;
+			background-color: #faca62;
 		}
 
 /* Wrapper */
 
 	#wrapper {
+		background-color: #ffffff;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;

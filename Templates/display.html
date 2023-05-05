@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}" />
 		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='noscript.css.css')}}"  /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" style="background-image: url(static/bg.png) !important;">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -29,9 +29,12 @@
 
  
 							<article id="intro">
-								<!-- <h2 class="major" >AudioBook</h2> -->
-                                <h3 class="major"  style="text-align:center">AudioBook</h3>
+								<div class="inner">
+								<h1>AudioBook</h1>
+								
+								
 								<h4>Here's your generated audiobook </h4>
+								</div>
 								<span class="image main"><img src="{{ url_for('static', filename='pred1.jpg') }}" alt="" /></span>
 
 								<video width="320" height="240" controls>
@@ -65,7 +68,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled</p>
+						<p class="copyright">&copy; Audiobook|Group4</p>
 					</footer>
 
 			</div>
