@@ -97,6 +97,23 @@ def show_image():
     # return render_template('display.html', user_image=img_file_path)
     return render_template('display.html')
 
+from google.cloud import datastore
+
+datastore_client = datastore.Client()
+
+def store_time(dt):
+    entity = datastore.Entity(key=datastore_client.key('visit'))
+    entity.update({
+        'timestamp': dt
+    })
+    datastore_client.put(entity)
+
+
+def fetch_times(limit):
+    query = datastore_client.query(kind='visit')
+    query.order = ['-timestamp']
+    times = query.fetch(limit=limit)
+    return times
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
