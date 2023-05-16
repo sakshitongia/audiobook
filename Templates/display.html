@@ -1,87 +1,70 @@
 <!DOCTYPE HTML>
 <!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Dimension by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Comic AudioBook</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}" />
-		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='noscript.css.css')}}"  /></noscript>
-	</head>
-	<body class="is-preload" style="background-image: url(static/bg.png) !important;">
+    <head>
+        <title>Comic AudioBook</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}" />
+        <noscript><link rel="stylesheet" href="{{ url_for('static', filename='noscript.css.css')}}"  /></noscript>
+    </head>
+    <body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Wrapper -->
+            <div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<!-- <div class="logo">
-							<span class="icon fa-gem"></span>
-						</div> -->
-						<div class="content">
-
-
-
-
- 
-							<article id="intro">
-								<div class="inner">
-								<h1>AudioBook</h1>
-								
-								
-								<h4>Here's your generated audiobook </h4>
-								</div>
-								<span class="image main"><img src="{{ url_for('static', filename='pred1.jpg') }}" alt="Oops..looks like there's an error! Try uploading again." /></span>
-
-								<video width="320" height="240" controls>
-									<span class="image main"><source src="{{ url_for('static', filename='output.mp4') }}" type="video/mp4"?></span>
-								</video>
-								
-								
-							</article>
-
-                          
+                <!-- Header -->
+                    <header id="header">
+                        <!-- <div class="logo">
+                            <span class="icon fa-gem"></span>
+                        </div> -->
+                        <div class="content">
 
 
 
-							
+
+
+                            <article id="intro">
+                                <!-- <h2 class="major" >AudioBook</h2> -->
+                                <h3 class="major"  style="text-align:center">AudioBook</h3>
+                                <h4>Here's your generated audiobook </h4>
+
+                                            <video width="640" height="640" controls>
+
+                <source src="{{ url_for('static', filename='Final1/output_comic.mp4') }}" type="video/mp4" alt="Oops..looks like there's an error! Try uploading again.">
+
+                Your browser does not support the video tag.
+              </video>
+                     </article>
+
+
+                        </div>
+                        <nav>
+                    </header>
 
 
 
-						</div>
-						<nav>
-							<!-- <ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
+                <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">&copy; Untitled</p>
+                    </footer>
 
-							</ul>
-						</nav> -->
-					</header>
+            </div>
 
+        <!-- BG -->
+            <div id="bg"></div>
 
+        <!-- Scripts -->
+        <script  src="{{ url_for('static', filename='jquery.min.js')}}"></script>
+            <script src="{{ url_for('static', filename='browser.min.js')}}"></script>
+            <script src="{{ url_for('static', filename='breakpoints.min.js')}}" ></script>
+            <script src="{{ url_for('static', filename='util.js')}}" ></script>
+            <script src="{{ url_for('static', filename='main.js')}}" ></script>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Audiobook|Group4</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-		<script  src="{{ url_for('static', filename='jquery.min.js')}}"></script>
-			<script src="{{ url_for('static', filename='browser.min.js')}}"></script>
-			<script src="{{ url_for('static', filename='breakpoints.min.js')}}" ></script>
-			<script src="{{ url_for('static', filename='util.js')}}" ></script>
-			<script src="{{ url_for('static', filename='main.js')}}" ></script>
-
-	</body>
+    </body>
 </html>
+
